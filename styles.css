@@ -1,0 +1,1063 @@
+/* ---------------------------------------------------------------------- */
+/*                               General                                  */
+/* ---------------------------------------------------------------------- */
+
+:root {
+  --main: #ebebeb;
+  --secondary: #f5f5f5;
+  --hovered: #5a6872;
+  --text: #230612;
+  --neon_pink: #ff8ad1;
+  --neon_teal: #0c7d9d;
+  --neon_orange: #ff6a80;
+  --neon_green: #5bec95;
+  --neon_yellow: #ffea6b;
+}
+
+html {
+  scroll-behavior: smooth;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--main);
+}
+
+body {
+  padding-top: 60px;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+
+  background-color: var(--main);
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -moz-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+footer {
+  margin-top: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: var(--text);
+  transition: color 0.3s ease-in-out;
+}
+
+.detail-container {
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 1200px) {
+  .detail-container {
+    max-width: 1100px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .detail-container {
+    max-width: 1600px;
+  }
+}
+
+.img-mobile {
+  width: 250px;
+}
+
+.img-mobile-double {
+  max-width: 40vw;
+}
+
+@media (min-width: 768px) {
+  .img-mobile-double {
+    max-width: 230px;
+    margin: 0 2em;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .img-mobile {
+    width: 250px;
+  }
+
+  .img-mobile-double {
+    max-width: 250px;
+    margin: 0 3em;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .img-mobile {
+    width: 300px;
+  }
+
+  .img-mobile-double {
+    max-width: 350px;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  /* .img-mobile {
+        width: 175px;
+    } */
+}
+
+/* ---------------------------------------------------------------------- */
+/*                                Custom                                  */
+/* ---------------------------------------------------------------------- */
+
+.spotify {
+  color: #1db954;
+  transition: color 0.2s ease-in-out;
+}
+.spotify:hover {
+  color: #1b9746;
+  transition: color 0.2s ease-in-out;
+}
+
+.link-custom {
+  color: var(--text);
+  transition: color 0.2s ease-in-out;
+}
+
+.link-custom:hover {
+  color: var(--hovered);
+  transition: color 0.2s ease-in-out;
+}
+
+.nopadding {
+  padding: 0 !important;
+}
+
+.mark-parcel-tracker {
+  background-color: rgba(0, 96, 240, 0.2);
+  border-radius: 8px;
+  padding: 5px !important;
+}
+
+.mark-url-shortener {
+  background-color: rgba(35, 84, 112, 0.2);
+  border-radius: 8px;
+  padding: 5px !important;
+}
+
+.mark-pocket2kindle {
+  background-color: rgba(150, 43, 102, 0.2);
+  border-radius: 8px;
+  padding: 5px !important;
+}
+.mark-docks-sh {
+  background-color: rgba(182, 102, 48, 0.2);
+  border-radius: 8px;
+  padding: 5px !important;
+}
+
+.row-custom {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.bg-secondary {
+  background-color: var(--secondary) !important;
+}
+
+.mobile-preview-rounded {
+  border-radius: 1rem;
+}
+
+.container {
+  transition: all 0.3s ease-in-out;
+}
+
+.resizable-image {
+  transition: all 0.3s ease-in-out;
+}
+
+.rounded {
+  border-radius: 0.7em !important;
+}
+
+.rounded-4 {
+  border-radius: 8px;
+}
+
+.btn-rounded {
+  border-radius: 0.7em !important;
+}
+
+.gradient-text-bg {
+  background: rgb(22, 255, 223);
+  background: linear-gradient(
+    59deg,
+    rgba(22, 255, 223, 1) 0%,
+    rgba(235, 59, 255, 0.5508578431372548) 46%,
+    rgba(14, 255, 80, 1) 98%
+  );
+  background-size: 200% 200%;
+
+  -webkit-animation: parcel-tracker-gradient 4s ease-in-out infinite;
+  -moz-animation: parcel-tracker-gradient 4s ease-in-out infinite;
+  animation: parcel-tracker-gradient 4s ease-in-out infinite;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.gradient-badge {
+  background: rgb(22, 255, 223);
+  background: linear-gradient(
+    59deg,
+    rgba(22, 255, 223, 1) 0%,
+    rgba(235, 59, 255, 0.5508578431372548) 46%,
+    rgba(14, 255, 80, 1) 98%
+  );
+  background-size: 1000% 1000%;
+
+  -webkit-animation: parcel-tracker-gradient 4s ease-in-out infinite;
+  -moz-animation: parcel-tracker-gradient 4s ease-in-out infinite;
+  animation: parcel-tracker-gradient 4s ease-in-out infinite;
+}
+
+@media (min-width: 576px) {
+  .resizable-image {
+    max-width: 100%;
+  }
+
+  .about-me-image {
+    max-width: 80%;
+  }
+
+  .rounded {
+    border-radius: 0.8em !important;
+  }
+
+  .btn-rounded {
+    border-radius: 0.8em !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .resizable-image {
+    max-width: 95%;
+  }
+
+  .about-me-image {
+    max-width: 50%;
+  }
+
+  .rounded {
+    border-radius: 1em !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .resizable-image {
+    max-width: 80%;
+  }
+
+  .about-me-image {
+    max-width: 50%;
+  }
+
+  .rounded {
+    border-radius: 1.2em !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .resizable-image {
+    max-width: 70%;
+  }
+
+  .about-me-image {
+    max-width: 40%;
+  }
+}
+
+/* ---------------------------------------------------------------------- */
+/*                                 Hello                                  */
+/* ---------------------------------------------------------------------- */
+#hello {
+  margin-top: 10vh;
+  margin-bottom: 20vh;
+}
+
+#hello h1 {
+  font-size: 5em;
+}
+
+#hello h2 {
+  font-size: 2.5em;
+}
+
+#hello h4 {
+  font-size: 2em;
+}
+
+@media screen and (max-width: 568px) {
+  #hello h1 {
+    font-size: 2.5em;
+  }
+
+  #hello h2 {
+    font-size: 1.5em;
+  }
+
+  #hello h4 {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 569px) and (max-width: 1200px) {
+  #hello h1 {
+    font-size: 3.5em;
+  }
+
+  #hello h2 {
+    font-size: 2em;
+  }
+
+  #hello h4 {
+    font-size: 1.8em;
+  }
+}
+
+#hello img {
+  width: 400px;
+}
+
+.floating-card {
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -moz-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+@media (min-width: 544px) {
+  .hoverable-tile {
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .hoverable-tile:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+}
+
+/* ---------------------------------------------------------------------- */
+/*                             About Me                                   */
+/* ---------------------------------------------------------------------- */
+
+/* @media (min-width: 544px) {
+    #about-me .hoverable-tile {
+        transform: scale(1);
+        transition: transform .8s ease-in-out;
+    }
+
+    #about-me .hoverable-tile:hover {
+        transform: scale(.95);
+        transition: transform .8s ease-in-out;
+    }
+
+    #about-me .rellax {
+        position: static;
+    }
+} */
+
+#about-me {
+  margin-bottom: 3em;
+}
+
+@media screen and (max-width: 568px) {
+  #about-me {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+
+  .row {
+    --bs-gutter-x: 0 !important;
+  }
+}
+
+/* ---------------------------------------------------------------------- */
+/*                           Project Details                              */
+/* ---------------------------------------------------------------------- */
+
+.btn-main {
+  border: none;
+  background-color: #212529 !important;
+  transition: background-color 0.3s ease-in-out;
+  color: var(--secondary);
+}
+
+.btn-main:hover {
+  background-color: #363d45 !important;
+  transition: background-color 0.3s ease-in-out;
+  color: var(--secondary);
+}
+
+.btn-main .badge-parcel-tracker {
+  background-color: #174c9a !important;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-main:hover .badge-parcel-tracker {
+  background-color: #2a72df !important;
+  transition: background-color 0.3s ease-in-out;
+}
+.btn-main .badge-url-shortener {
+  background-color: #3f698b !important;
+  transition: background-color 0.3s ease-in-out;
+}
+.btn-main:hover .badge-url-shortener {
+  background-color: #4485bb !important;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.negative-top {
+  margin-top: -0.3em;
+}
+
+@media (min-width: 544px) {
+  .negative-top {
+    margin-top: -0.5em;
+  }
+}
+
+/*
+.carousel-dark .carousel-indicators [data-bs-target] {
+    background-color: var(--text);
+} */
+
+/* ---------------------------------------------------------------------- */
+/*                               Navbar                                   */
+/* ---------------------------------------------------------------------- */
+nav {
+  background-color: var(--main);
+  -webkit-transition: nav 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -moz-transition: nav 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: nav 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.nav-item a {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.navbar-left .nav-item {
+  margin-right: 30px;
+}
+
+.navbar-right .nav-item .nav-link {
+  margin-right: 30px;
+}
+
+.nav-link:focus {
+  color: var(--text);
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.nav-link:hover {
+  color: var(--hovered) !important;
+  transition: color 0.3s ease-in-out;
+}
+
+@media (min-width: 544px) {
+  .navbar-left .nav-item {
+    border-bottom: 2px solid;
+    border-color: transparent !important;
+    transition: border-color 0.3s ease-in-out;
+  }
+
+  .navbar-left .nav-item:hover {
+    border-color: var(--hovered) !important;
+    transition: border-color 0.3s ease-in-out;
+  }
+
+  .navbar-left .nav-item:hover a {
+    color: var(--hovered);
+    transition: color 0.3s ease-in-out;
+  }
+
+  .navbar-right .nav-item:hover a {
+    color: var(--hovered);
+    transition: color 0.3s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .nav-item a {
+    font-size: 1em !important;
+  }
+
+  .navbar-left .nav-item {
+    margin-right: 0;
+  }
+
+  .navbar-right .nav-item .nav-link {
+    margin-right: 10px;
+  }
+}
+
+/* ---------------------------------------------------------------------- */
+/*                               Projects                                 */
+/* ---------------------------------------------------------------------- */
+
+@media screen and (max-width: 568px) {
+  .project-container h3 {
+    font-size: 30px !important;
+  }
+
+  .project-container h2 {
+    font-size: 14px !important;
+  }
+}
+
+@media (min-width: 544px) {
+  .project-card {
+    transition: all 0.3s ease-in-out;
+  }
+
+  .project-card:hover {
+    transform: translate3d(0, -5px, 0);
+    box-shadow: 0 52px 74px rgba(33, 32, 32, 0.12);
+  }
+
+  .project-card img {
+    transform: scale(0.85);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .project-card:hover img {
+    transform: scale(0.85) translate3d(0px, -10px, 0);
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.project-container {
+  margin-bottom: 5em;
+}
+
+.project-container a {
+  text-decoration: none;
+}
+
+.project-container h2 {
+  color: gray !important;
+  opacity: 0.6;
+  mix-blend-mode: difference;
+  text-shadow: 1px 1px 2px gray;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.project-container h3 {
+  color: #464242;
+  text-shadow: 0 1px 2px gray;
+
+  font-size: 40px;
+  letter-spacing: -1px;
+  font-weight: 600;
+}
+
+#other-projects {
+  color: var(--text);
+  transition: color 0.3s ease-in-out;
+  margin-bottom: 5vh;
+}
+
+#other-projects:hover {
+  color: var(--hovered);
+  transition: color 0.3s ease-in-out;
+}
+
+/* ---------------------------------------------------------------------- */
+/*                            Parcel Tracker                              */
+/* ---------------------------------------------------------------------- */
+
+.parcel-tracker-gradient {
+  background-image: linear-gradient(73deg, #9890e3 0%, #b1f4cf 100%);
+
+  background-size: 500% 500%;
+
+  -webkit-animation: parcel-tracker-gradient 5s ease-in-out infinite;
+  -moz-animation: parcel-tracker-gradient 5s ease-in-out infinite;
+  animation: parcel-tracker-gradient 5s ease-in-out infinite;
+}
+
+@-webkit-keyframes parcel-tracker-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-moz-keyframes parcel-tracker-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes parcel-tracker-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* ---------------------------------------------------------------------- */
+/*                      Other Projects Gradinet                           */
+/* ---------------------------------------------------------------------- */
+
+.other-projects-gradient {
+  background-color: #fad0c4;
+  background-image: linear-gradient(315deg, #fad0c4 0%, #f1a7f1 74%);
+
+  background-size: 400% 400%;
+
+  -webkit-animation: other-projects-gradient 10s ease-in-out infinite;
+  -moz-animation: other-projects-gradient 10s ease-in-out infinite;
+  animation: other-projects-gradient 10s ease-in-out infinite;
+}
+
+@-webkit-keyframes other-projects-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-moz-keyframes other-projects-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes other-projects-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* ---------------------------------------------------------------------- */
+/*                            Pocket2Kindle                               */
+/* ---------------------------------------------------------------------- */
+
+.pocket2kindle-gradient {
+  background-color: #e3e3e3;
+  background-image: linear-gradient(147deg, #e3e3e3 0%, #d93965 74%);
+
+  background-size: 400% 400%;
+
+  -webkit-animation: pocket2kindle-gradient 10s ease-in-out infinite;
+  -moz-animation: pocket2kindle-gradient 10s ease-in-out infinite;
+  animation: pocket2kindle-gradient 10s ease-in-out infinite;
+}
+
+@-webkit-keyframes pocket2kindle-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-moz-keyframes pocket2kindle-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes pocket2kindle-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* ---------------------------------------------------------------------- */
+/*                             URL Shortener                              */
+/* ---------------------------------------------------------------------- */
+
+.url-shortener-gradient {
+  background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
+
+  background-size: 400% 400%;
+
+  -webkit-animation: url-shortener-gradient 8s ease-in-out infinite;
+  -moz-animation: url-shortener-gradient 8s ease-in-out infinite;
+  animation: url-shortener-gradient 8s ease-in-out infinite;
+}
+
+@-webkit-keyframes url-shortener-gradient {
+  0% {
+    background-position: 0% 88%;
+  }
+
+  50% {
+    background-position: 100% 13%;
+  }
+
+  100% {
+    background-position: 0% 88%;
+  }
+}
+
+@-moz-keyframes url-shortener-gradient {
+  0% {
+    background-position: 0% 88%;
+  }
+
+  50% {
+    background-position: 100% 13%;
+  }
+
+  100% {
+    background-position: 0% 88%;
+  }
+}
+
+@keyframes url-shortener-gradient {
+  0% {
+    background-position: 0% 88%;
+  }
+
+  50% {
+    background-position: 100% 13%;
+  }
+
+  100% {
+    background-position: 0% 88%;
+  }
+}
+
+/* ---------------------------------------------------------------------- */
+/*                                Docks.sh                                */
+/* ---------------------------------------------------------------------- */
+
+.docks-sh-gradient {
+  background-color: #fce043;
+  background: linear-gradient(315deg, #fce043 0%, #fb7ba2 74%);
+
+  background-size: 400% 400%;
+
+  -webkit-animation: docks-sh-gradient 7s ease-in-out infinite;
+  -moz-animation: docks-sh-gradient 7s ease-in-out infinite;
+  animation: docks-sh-gradient 7s ease-in-out infinite;
+}
+
+@-webkit-keyframes docks-sh-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-moz-keyframes docks-sh-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-o-keyframes docks-sh-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes docks-sh-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main: #232a2f;
+    --secondary: #1a2023;
+    --hovered: #8c979f;
+    --text: #eff1f3;
+  }
+
+  hr {
+    color: var(--hovered);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  li {
+    color: var(--text);
+  }
+
+  .text-secondary {
+    color: rgb(179, 179, 179) !important;
+  }
+
+  .other-projects-gradient {
+    background-color: #7a7adb;
+    background-image: linear-gradient(315deg, #32325f 0%, #170e13 74%);
+
+    background-size: 400% 400%;
+
+    -webkit-animation: other-projects-gradient 10s ease-in-out infinite;
+    -moz-animation: other-projects-gradient 10s ease-in-out infinite;
+    animation: other-projects-gradient 10s ease-in-out infinite;
+
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .parcel-tracker-gradient {
+    background-color: #000000;
+    background: linear-gradient(147deg, #000000 0%, #07324e 80%);
+
+    background-size: 400% 100%;
+    -webkit-animation: parcel-tracker-gradient 20s ease-in-out infinite;
+    -moz-animation: parcel-tracker-gradient 20s ease-in-out infinite;
+    animation: parcel-tracker-gradient 20s ease-in-out infinite;
+
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .pocket2kindle-gradient {
+    background-color: #e84393;
+    background: linear-gradient(223deg, #6b1c3a 0%, #000000 100%);
+
+    background-size: 300% 300%;
+    -webkit-animation: pocket2kindle-gradient 10s ease-in-out infinite;
+    -moz-animation: pocket2kindle-gradient 10s ease-in-out infinite;
+    animation: pocket2kindle-gradient 10s ease-in-out infinite;
+
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .url-shortener-gradient {
+    background-color: #7ed6df;
+    background: linear-gradient(12deg, #000000c4 0%, #28382b 80%);
+
+    background-size: 400% 400%;
+    -webkit-animation: url-shortener-gradient 20s ease-in-out infinite;
+    -moz-animation: url-shortener-gradient 20s ease-in-out infinite;
+    animation: url-shortener-gradient 20s ease-in-out infinite;
+
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .docks-sh-gradient {
+    background-color: #55efc4;
+    background: linear-gradient(140deg, #000000 0%, #0c3d41 80%);
+
+    background-size: 400% 400%;
+    -webkit-animation: docks-sh-gradient 15s ease-in-out infinite;
+    -moz-animation: docks-sh-gradient 15s ease-in-out infinite;
+    animation: docks-sh-gradient 15s ease-in-out infinite;
+
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .project-container h2 {
+    color: var(--text) !important;
+  }
+
+  .project-container h3 {
+    color: var(--text);
+  }
+
+  .btn-main {
+    border-color: var(--text);
+    border-style: solid;
+    border-width: 1px;
+
+    color: var(--text);
+    background-color: var(--secondary) !important;
+
+    transition: all 0.3s ease-in-out;
+  }
+
+  .btn-main:hover {
+    color: var(--hovered);
+    border-color: var(--hovered);
+    background-color: var(--secondary) !important;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .btn-main .parcel-tracker-badge {
+    background-color: #174c9a !important;
+  }
+
+  .btn-main:hover .parcel-tracker-badge {
+    background-color: #2a72df !important;
+  }
+
+  .btn-main .badge-url-shortener {
+    background-color: #3a533f !important;
+  }
+
+  .btn-main:hover .badge-url-shortener {
+    background-color: #3a5c41 !important;
+  }
+
+  .project-card:hover {
+    transform: translate3d(0, -5px, 0);
+    box-shadow: none;
+  }
+  .link-secondary {
+    color: rgb(179, 179, 179) !important;
+    transition: color 0.2s ease-in-out;
+  }
+  .link-secondary:hover {
+    color: rgb(153, 150, 150) !important;
+    transition: color 0.2s ease-in-out;
+  }
+
+  .mark-parcel-tracker {
+    background-color: rgba(0, 96, 240, 0.308);
+  }
+
+  .mark-url-shortener {
+    background-color: #38523c;
+  }
+  .mark-pocket2kindle {
+    background-color: rgba(150, 43, 102, 0.671);
+  }
+  .mark-docks-sh {
+    background-color: #11595f;
+  }
+}
