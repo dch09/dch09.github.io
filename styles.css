@@ -953,6 +953,12 @@ nav {
   .text-secondary {
     color: rgb(179, 179, 179) !important;
   }
+  .text-black {
+    color: rgb(179, 179, 179) !important;
+  }
+  .text-dark {
+    color: var(--main) !important;
+  }
 
   .other-projects-gradient {
     background-color: #7a7adb;
@@ -1096,5 +1102,79 @@ nav {
 
   .mark-docks-sh {
     background-color: #11595f;
+  }
+}
+
+.web-colors-text-gradient {
+  background: rgb(22, 255, 223);
+  background: linear-gradient(120deg,
+      rgb(142, 19, 167) 0%,
+      rgba(59, 62, 255, 0.551) 46%,
+      rgba(14, 255, 80, 1) 98%);
+  background-size: 200% 200%;
+
+  -webkit-animation: text-gradient-flow 4s ease-in-out infinite;
+  -moz-animation: text-gradient-flow 4s ease-in-out infinite;
+  animation: text-gradient-flow 4s ease-in-out infinite;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent !important;
+}
+
+.web-colors-gradient {
+  background: rgb(22, 255, 223);
+  background: linear-gradient(53deg,
+      rgb(142, 19, 167) 0%,
+      rgba(59, 62, 255, 0.551) 20%,
+      rgba(14, 255, 80, 1) 98%);
+  background-size: 500% 500%;
+
+  -webkit-animation: text-gradient-flow 15s ease infinite;
+  -moz-animation: text-gradient-flow 15s ease infinite;
+  animation: text-gradient-flow 15s ease infinite;
+
+}
+
+
+@-webkit-keyframes text-gradient-flow {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes text-gradient-flow {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes text-gradient-flow {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
   }
 }
