@@ -36,6 +36,39 @@ body {
   -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   -moz-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+  animation: fade-in ease-in-out .2s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 footer {
@@ -59,7 +92,7 @@ p {
 
 @media screen and (min-width: 1200px) {
   .detail-container {
-    max-width: 1100px;
+    max-width: 900px;
   }
 }
 
@@ -122,6 +155,7 @@ p {
   color: #1db954;
   transition: color 0.2s ease-in-out;
 }
+
 .spotify:hover {
   color: #1b9746;
   transition: color 0.2s ease-in-out;
@@ -158,6 +192,7 @@ p {
   border-radius: 8px;
   padding: 5px !important;
 }
+
 .mark-docks-sh {
   background-color: rgba(182, 102, 48, 0.2);
   border-radius: 8px;
@@ -201,12 +236,10 @@ p {
 
 .gradient-text-bg {
   background: rgb(22, 255, 223);
-  background: linear-gradient(
-    59deg,
-    rgba(22, 255, 223, 1) 0%,
-    rgba(235, 59, 255, 0.5508578431372548) 46%,
-    rgba(14, 255, 80, 1) 98%
-  );
+  background: linear-gradient(59deg,
+      rgba(22, 255, 223, 1) 0%,
+      rgba(235, 59, 255, 0.5508578431372548) 46%,
+      rgba(14, 255, 80, 1) 98%);
   background-size: 200% 200%;
 
   -webkit-animation: parcel-tracker-gradient 4s ease-in-out infinite;
@@ -220,12 +253,10 @@ p {
 
 .gradient-badge {
   background: rgb(22, 255, 223);
-  background: linear-gradient(
-    59deg,
-    rgba(22, 255, 223, 1) 0%,
-    rgba(235, 59, 255, 0.5508578431372548) 46%,
-    rgba(14, 255, 80, 1) 98%
-  );
+  background: linear-gradient(59deg,
+      rgba(22, 255, 223, 1) 0%,
+      rgba(235, 59, 255, 0.5508578431372548) 46%,
+      rgba(14, 255, 80, 1) 98%);
   background-size: 1000% 1000%;
 
   -webkit-animation: parcel-tracker-gradient 4s ease-in-out infinite;
@@ -420,10 +451,12 @@ p {
   background-color: #2a72df !important;
   transition: background-color 0.3s ease-in-out;
 }
+
 .btn-main .badge-url-shortener {
   background-color: #3f698b !important;
   transition: background-color 0.3s ease-in-out;
 }
+
 .btn-main:hover .badge-url-shortener {
   background-color: #4485bb !important;
   transition: background-color 0.3s ease-in-out;
@@ -920,6 +953,12 @@ nav {
   .text-secondary {
     color: rgb(179, 179, 179) !important;
   }
+  .text-black {
+    color: rgb(179, 179, 179) !important;
+  }
+  .text-dark {
+    color: var(--main) !important;
+  }
 
   .other-projects-gradient {
     background-color: #7a7adb;
@@ -1038,10 +1077,12 @@ nav {
     transform: translate3d(0, -5px, 0);
     box-shadow: none;
   }
+
   .link-secondary {
     color: rgb(179, 179, 179) !important;
     transition: color 0.2s ease-in-out;
   }
+
   .link-secondary:hover {
     color: rgb(153, 150, 150) !important;
     transition: color 0.2s ease-in-out;
@@ -1054,10 +1095,86 @@ nav {
   .mark-url-shortener {
     background-color: #38523c;
   }
+
   .mark-pocket2kindle {
     background-color: rgba(150, 43, 102, 0.671);
   }
+
   .mark-docks-sh {
     background-color: #11595f;
+  }
+}
+
+.web-colors-text-gradient {
+  background: rgb(22, 255, 223);
+  background: linear-gradient(120deg,
+      rgb(142, 19, 167) 0%,
+      rgba(59, 62, 255, 0.551) 46%,
+      rgba(14, 255, 80, 1) 98%);
+  background-size: 200% 200%;
+
+  -webkit-animation: text-gradient-flow 4s ease-in-out infinite;
+  -moz-animation: text-gradient-flow 4s ease-in-out infinite;
+  animation: text-gradient-flow 4s ease-in-out infinite;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent !important;
+}
+
+.web-colors-gradient {
+  background: rgb(22, 255, 223);
+  background: linear-gradient(53deg,
+      rgb(142, 19, 167) 0%,
+      rgba(59, 62, 255, 0.551) 20%,
+      rgba(14, 255, 80, 1) 98%);
+  background-size: 500% 500%;
+
+  -webkit-animation: text-gradient-flow 15s ease infinite;
+  -moz-animation: text-gradient-flow 15s ease infinite;
+  animation: text-gradient-flow 15s ease infinite;
+
+}
+
+
+@-webkit-keyframes text-gradient-flow {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes text-gradient-flow {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes text-gradient-flow {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
   }
 }
