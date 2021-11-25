@@ -92,7 +92,7 @@ p {
 
 @media screen and (min-width: 1200px) {
   .detail-container {
-    max-width: 900px;
+    max-width: 1000px;
   }
 }
 
