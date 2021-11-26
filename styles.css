@@ -954,7 +954,7 @@ nav {
     color: rgb(179, 179, 179) !important;
   }
   .text-black {
-    color: rgb(179, 179, 179) !important;
+    color: rgba(179, 179, 179, 0.815) !important;
   }
   .text-dark {
     color: var(--main) !important;
