@@ -86,21 +86,6 @@ p {
   transition: color 0.3s ease-in-out;
 }
 
-.detail-container {
-  transition: all 0.3s ease-in-out;
-}
-
-@media screen and (min-width: 1200px) {
-  .detail-container {
-    max-width: 900px;
-  }
-}
-
-@media screen and (min-width: 1600px) {
-  .detail-container {
-    max-width: 1600px;
-  }
-}
 
 .img-mobile {
   width: 250px;
