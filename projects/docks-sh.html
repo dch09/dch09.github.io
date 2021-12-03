@@ -1,256 +1,157 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" type="image/svg+xml" href="../img/favicon.svg" />
-    <link rel="icon" type="image/png" href="../img/favicon.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+  <link rel="icon" type="image/svg+xml" href="../img/favicon.svg" />
+  <link rel="icon" type="image/png" href="../img/favicon.png" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css"
-    />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
-      crossorigin="anonymous"
-    />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css" />
 
-    <link rel="stylesheet" href="../styles.css" />
-    <title>docks.sh | dch09</title>
-  </head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
 
-  <body>
-    <header>
-      <nav class="navbar navbar-expand fixed-top">
-        <div class="container">
-          <ul class="navbar-nav navbar-left">
-            <li class="nav-item">
-              <a href="/" class="nav-link nav-current">Projekty</a>
-            </li>
-            <li class="nav-item">
-              <a href="/about-me.html" class="nav-link">O mnie</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav navbar-right">
-            <li class="nav-item">
-              <a
-                href="https://github.com/dch09"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="nav-link"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  class="bi bi-github"
-                  viewbox="0 0 16 16"
-                >
-                  <path
-                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-                  />
-                </svg>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                href="mailto: daniel.choroszucha@icloud.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="nav-link"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  class="bi bi-envelope-fill"
-                  viewbox="0 0 16 16"
-                >
-                  <path
-                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"
-                  />
-                </svg>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                href="https://www.linkedin.com/in/daniel-choroszucha-a811291aa/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="nav-link"
-                style="margin-right: 0.2em !important"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  class="bi bi-linkedin"
-                  viewbox="0 0 16 16"
-                >
-                  <path
-                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
-                  />
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+  <link rel="stylesheet" href="../styles.css" />
+  <title>docks.sh | dch09</title>
+</head>
 
-    <div class="d-flex flex-column container gap-5 my-5 px-3 px-lg-0">
-      <div
-        class="
-          d-flex
-          flex-column
-          text-center text-lg-start
-          flex-lg-row
-          justify-content-between
-          project-container
-          docks-sh-gradient
-          rounded
-          p-5
-          shadow
-        "
-        style="margin-bottom: 0"
-      >
-        <h3 class="d-inline project-title">docks.sh</h3>
-        <h2 class="d-inline project-category my-auto text-muted">Shell</h2>
+<body class="container gap-5">
+  <header>
+    <nav class="navbar navbar-expand fixed-top">
+      <div class="container">
+        <ul class="navbar-nav navbar-left">
+          <li class="nav-item">
+            <a href="/" class="nav-link nav-current">Projekty</a>
+          </li>
+          <li class="nav-item">
+            <a href="/about-me.html" class="nav-link">O mnie</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav navbar-right">
+          <li class="nav-item">
+            <a href="https://github.com/dch09" target="_blank" rel="noopener noreferrer" class="nav-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github"
+                viewbox="0 0 16 16">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+              </svg>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="mailto: daniel.choroszucha@icloud.com" target="_blank" rel="noopener noreferrer" class="nav-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                class="bi bi-envelope-fill" viewbox="0 0 16 16">
+                <path
+                  d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+              </svg>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.linkedin.com/in/daniel-choroszucha-a811291aa/" target="_blank"
+              rel="noopener noreferrer" class="nav-link" style="margin-right: 0.2em !important">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-linkedin"
+                viewbox="0 0 16 16">
+                <path
+                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
+    </nav>
+  </header>
 
-      <div class="d-grid gap-5">
-        <img
-          src="../img/previews/docks-sh/low/main.webp"
-          data-src="../img/previews/docks-sh/main.png"
-          class="img-fluid rounded-4 shadow mx-auto lazyload rellax"
-          data-rellax-speed="2"
-          data-rellax-xs-speed="0"
-          alt="preview screenshot"
-          width="900px"
-        />
-
-        <div class="col-12 col-lg-8 mx-auto text-center">
-          <h3>
-            <span class="fw-bold">docks.sh</span> to skrypt napisany do
-            zarządzania wersjami ustawień Docka na Macu.
-          </h3>
-          <br />
-
-          <h4 class="text-secondary">
-            Osobiście cenię sobie porządek i organizację środowiska pracy. W
-            zależności od tego co robię, zawsze potrzebuję mieć inne aplikacje
-            pod ręką.
-          </h4>
-        </div>
-
-        <img
-          src="../img/previews/docks-sh/low/docks-sh-demo.webp"
-          data-src="../img/previews/docks-sh/docks-sh-demo.gif"
-          class="img-fluid rounded-4 shadow mx-auto lazyload"
-          alt="preview gif"
-          width="1000px"
-        />
-
-        <div class="col-12 col-lg-8 mx-auto text-center">
-          <h1 class="gradient-text-bg">
-            <span
-              class="
-                badge
-                gradient-badge
-                align-middle
-                negative-top
-                fs-6
-                me-2
-              "
-              ><i class="bi bi-braces"></i></span
-            >MacOS App
-          </h1>
-          <h3 class="text-secondary">
-            Aplikacja zastępująca skrypt docks.sh napisana w Swifcie w drodze!
-          </h3>
-        </div>
-
-        <div class="mx-auto d-flex">
-          <a
-            href="https://github.com/dch09/docks-sh"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-main btn-rounded"
-          >
-            <i class="bi bi-github"></i>
-            GitHub
-          </a>
-        </div>
-
-        <div>
-          <h4 class="text-center">TODO List:</h4>
-          <hr style="width: 300px" class="mx-auto" />
-          <div class="mx-auto text-center">
-            <div class="d-inline-flex gap-2 flex-column">
-              <h6>
-                <span class="mark-docks-sh text-secondary"
-                  ><input type="checkbox" disabled /> TODO #1:</span
-                >
-              </h6>
-              <h6>
-                <span class="mark-docks-sh text-secondary"
-                  ><input type="checkbox" disabled /> TODO #2:</span
-                >
-              </h6>
-              <h6>
-                <span class="mark-docks-sh text-secondary"
-                  ><input type="checkbox" disabled /> TODO #3:</span
-                >
-              </h6>
-            </div>
-            <div class="d-inline-flex gap-2 flex-column text-start">
-              <h6 class="text-secondary">dokumentacja</h6>
-              <h6 class="text-secondary">tworzenie folderu zapisu</h6>
-              <h6 class="text-secondary">MacOS App</h6>
-            </div>
-          </div>
-        </div>
+  <div class="docks-sh-gradient p-5 rounded shadow">
+    <div class="row">
+      <div class="col-12 col-lg-8">
+        <img src="../img/previews/docks-sh/docks.sh.png" alt="docks.sh preview" width="800px" class="img-fluid">
+      </div>
+      <div class="col-12 col-lg-4 mt-3 mt-lg-0 text-center align-self-center project-container" style="margin-bottom: 0 !important;">
+        <h3 class="project-title">docks.sh</h3>
+        <h2 class="project-category text-muted">shell</h2>
+        <a href="https://github.com/dch09/docks-sh" target="_blank" rel="noopener noreferrer"
+          class="btn btn-main btn-rounded mt-3 mt-lg-5">
+          <i class="bi bi-github"></i>
+          GitHub
+        </a>
       </div>
     </div>
+  </div>
 
-    <hr style="color: transparent" />
 
-    <div class="text-center my-5">
-      <a href="/" class="btn btn-main btn-rounded">
-        <i class="bi bi-back" style="vertical-align: middle"></i>
-        Wszystkie projekty
-      </a>
-    </div>
+  <div class="px-3 px-lg-5 d-grid gap-2">
+    <h3 class="">
+      W zależności od tego co robię w danym momencie na komputerze, pod ręką zawsze potrzebny jest mi właściwy zestaw
+      narzędzi.
+    </h3>
+    <h5 class="text-secondary">
+      Osobiście nie jestem zwolennikiem wielu aplikacji w Docku, zwłaszcza gdy nie zamierzam ich otworzyć podczas
+      aktualnie wykonywanego zajęcia. Łatwo o rozproszenie podczas pracy nad projektem, gdy na ikonie Discorda pojawiają
+      się nowe powiadomienia.
+    </h5>
+    <hr>
+    <h3>Jak działa skrypt?</h3>
+    <h5 class="text-secondary">
+      Podczas zapisywania presetu aktualny stan docka zachowany w pliku <span
+        class="fst-italic text-black">com.apple.dock.plist</span> kopiowany jest do nowego pliku.
+      <br>
+      Wczytywanie w sposób analogiczny przenosi wcześniej utworzoną kopię, zmieniając jej nazwę na domyślną — <span
+        class="fst-italic text-black">com.apple.dock.plist</span> do systemowego folderu <span
+        class="fst-italic text-black">/Users/(username)/Library/Preferences/</span>.
+    </h5>
+    <h5 class="text-secondary">
+      Po przeniesieniu, aby zmiany zostały zastosowane konieczny jest restart Docka, przez co konieczne jest
+      wprowadzenie hasła przy wczytywaniu presetu.
+    </h5>
+  </div>
 
-    <footer>
-      <p class="text-center text-muted">© 2021 Daniel Choroszucha</p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/rellax@1.12.1/rellax.js"></script>
-    <script>
-      var rellax = new Rellax(".rellax", {
-        breakpoints: [576, 768, 1201],
-      });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
-    <script>
-      lazyload();
-    </script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <img src="https://via.placeholder.com/1000x800?text=Gif+Demo+Loading"
+    data-src="../img/previews/docks-sh/docks-sh-demo.gif" class="img-fluid rounded-4 shadow mx-auto lazyload"
+    alt="preview gif" width="1000px" />
+
+  <div class="col-12 col-lg-8 mx-auto text-center">
+    <h1 class="gradient-text-bg">
+      <span class="
+            badge
+            gradient-badge
+            align-middle
+            negative-top
+            fs-6
+            me-2
+          "><i class="bi bi-braces"></i></span>MacOS Native App
+    </h1>
+    <h3 class="text-secondary">
+      Aplikacja napisana w Swifcie w drodze!
+    </h3>
+  </div>
+
+  <div class="text-center">
+    <a href="/" class="btn btn-main btn-rounded">
+      <i class="bi bi-back" style="vertical-align: middle"></i>
+      Wszystkie projekty
+    </a>
+  </div>
+
+  <footer>
+    <p class="text-center text-muted">© 2021 Daniel Choroszucha</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/rellax@1.12.1/rellax.js"></script>
+  <script>
+    var rellax = new Rellax(".rellax", {
+      breakpoints: [576, 768, 1201],
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+  <script>
+    lazyload();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>

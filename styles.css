@@ -92,7 +92,7 @@ p {
 
 @media screen and (min-width: 1200px) {
   .detail-container {
-    max-width: 1000px;
+    max-width: 900px;
   }
 }
 
@@ -394,22 +394,6 @@ p {
 /*                             About Me                                   */
 /* ---------------------------------------------------------------------- */
 
-/* @media (min-width: 544px) {
-    #about-me .hoverable-tile {
-        transform: scale(1);
-        transition: transform .8s ease-in-out;
-    }
-
-    #about-me .hoverable-tile:hover {
-        transform: scale(.95);
-        transition: transform .8s ease-in-out;
-    }
-
-    #about-me .rellax {
-        position: static;
-    }
-} */
-
 #about-me {
   margin-bottom: 3em;
 }
@@ -639,51 +623,9 @@ nav {
 
   background-size: 500% 500%;
 
-  -webkit-animation: parcel-tracker-gradient 5s ease-in-out infinite;
-  -moz-animation: parcel-tracker-gradient 5s ease-in-out infinite;
-  animation: parcel-tracker-gradient 5s ease-in-out infinite;
-}
-
-@-webkit-keyframes parcel-tracker-gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@-moz-keyframes parcel-tracker-gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes parcel-tracker-gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
+  -webkit-animation: gradient-background-move 5s ease infinite;
+  -moz-animation: gradient-background-move 5s ease infinite;
+  animation: gradient-background-move 5s ease infinite;
 }
 
 /* ---------------------------------------------------------------------- */
@@ -696,51 +638,9 @@ nav {
 
   background-size: 400% 400%;
 
-  -webkit-animation: other-projects-gradient 10s ease-in-out infinite;
-  -moz-animation: other-projects-gradient 10s ease-in-out infinite;
-  animation: other-projects-gradient 10s ease-in-out infinite;
-}
-
-@-webkit-keyframes other-projects-gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@-moz-keyframes other-projects-gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes other-projects-gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
+  -webkit-animation: gradient-background-move 10s ease infinite;
+  -moz-animation: gradient-background-move 10s ease infinite;
+  animation: gradient-background-move 10s ease infinite;
 }
 
 /* ---------------------------------------------------------------------- */
@@ -753,51 +653,9 @@ nav {
 
   background-size: 400% 400%;
 
-  -webkit-animation: pocket2kindle-gradient 10s ease-in-out infinite;
-  -moz-animation: pocket2kindle-gradient 10s ease-in-out infinite;
-  animation: pocket2kindle-gradient 10s ease-in-out infinite;
-}
-
-@-webkit-keyframes pocket2kindle-gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@-moz-keyframes pocket2kindle-gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes pocket2kindle-gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
+  -webkit-animation: gradient-background-move 10s ease infinite;
+  -moz-animation: gradient-background-move 10s ease infinite;
+  animation: gradient-background-move 10s ease infinite;
 }
 
 /* ---------------------------------------------------------------------- */
@@ -809,51 +667,9 @@ nav {
 
   background-size: 400% 400%;
 
-  -webkit-animation: url-shortener-gradient 8s ease-in-out infinite;
-  -moz-animation: url-shortener-gradient 8s ease-in-out infinite;
-  animation: url-shortener-gradient 8s ease-in-out infinite;
-}
-
-@-webkit-keyframes url-shortener-gradient {
-  0% {
-    background-position: 0% 88%;
-  }
-
-  50% {
-    background-position: 100% 13%;
-  }
-
-  100% {
-    background-position: 0% 88%;
-  }
-}
-
-@-moz-keyframes url-shortener-gradient {
-  0% {
-    background-position: 0% 88%;
-  }
-
-  50% {
-    background-position: 100% 13%;
-  }
-
-  100% {
-    background-position: 0% 88%;
-  }
-}
-
-@keyframes url-shortener-gradient {
-  0% {
-    background-position: 0% 88%;
-  }
-
-  50% {
-    background-position: 100% 13%;
-  }
-
-  100% {
-    background-position: 0% 88%;
-  }
+  -webkit-animation: gradient-background-move 8s ease infinite;
+  -moz-animation: gradient-background-move 8s ease infinite;
+  animation: gradient-background-move 8s ease infinite;
 }
 
 /* ---------------------------------------------------------------------- */
@@ -866,12 +682,12 @@ nav {
 
   background-size: 400% 400%;
 
-  -webkit-animation: docks-sh-gradient 7s ease-in-out infinite;
-  -moz-animation: docks-sh-gradient 7s ease-in-out infinite;
-  animation: docks-sh-gradient 7s ease-in-out infinite;
+  -webkit-animation: gradient-background-move 7s ease infinite;
+  -moz-animation: gradient-background-move 7s ease infinite;
+  animation: gradient-background-move 7s ease infinite;
 }
 
-@-webkit-keyframes docks-sh-gradient {
+@-webkit-keyframes gradient-background-move {
   0% {
     background-position: 0% 50%;
   }
@@ -885,7 +701,7 @@ nav {
   }
 }
 
-@-moz-keyframes docks-sh-gradient {
+@-moz-keyframes gradient-background-move {
   0% {
     background-position: 0% 50%;
   }
@@ -899,7 +715,7 @@ nav {
   }
 }
 
-@-o-keyframes docks-sh-gradient {
+@-o-keyframes gradient-background-move {
   0% {
     background-position: 0% 50%;
   }
@@ -913,7 +729,7 @@ nav {
   }
 }
 
-@keyframes docks-sh-gradient {
+@keyframes gradient-background-move {
   0% {
     background-position: 0% 50%;
   }
@@ -966,9 +782,9 @@ nav {
 
     background-size: 400% 400%;
 
-    -webkit-animation: other-projects-gradient 10s ease-in-out infinite;
-    -moz-animation: other-projects-gradient 10s ease-in-out infinite;
-    animation: other-projects-gradient 10s ease-in-out infinite;
+    -webkit-animation: gradient-background-move 10s ease infinite;
+    -moz-animation: gradient-background-move 10s ease infinite;
+    animation: gradient-background-move 10s ease infinite;
 
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -980,9 +796,9 @@ nav {
     background: linear-gradient(147deg, #000000 0%, #07324e 80%);
 
     background-size: 400% 100%;
-    -webkit-animation: parcel-tracker-gradient 20s ease-in-out infinite;
-    -moz-animation: parcel-tracker-gradient 20s ease-in-out infinite;
-    animation: parcel-tracker-gradient 20s ease-in-out infinite;
+    -webkit-animation: gradient-background-move 20s ease infinite;
+    -moz-animation: gradient-background-move 20s ease infinite;
+    animation: gradient-background-move 20s ease infinite;
 
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -994,9 +810,9 @@ nav {
     background: linear-gradient(223deg, #6b1c3a 0%, #000000 100%);
 
     background-size: 300% 300%;
-    -webkit-animation: pocket2kindle-gradient 10s ease-in-out infinite;
-    -moz-animation: pocket2kindle-gradient 10s ease-in-out infinite;
-    animation: pocket2kindle-gradient 10s ease-in-out infinite;
+    -webkit-animation: gradient-background-move 10s ease infinite;
+    -moz-animation: gradient-background-move 10s ease infinite;
+    animation: gradient-background-move 10s ease infinite;
 
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -1008,9 +824,9 @@ nav {
     background: linear-gradient(12deg, #000000c4 0%, #28382b 80%);
 
     background-size: 400% 400%;
-    -webkit-animation: url-shortener-gradient 20s ease-in-out infinite;
-    -moz-animation: url-shortener-gradient 20s ease-in-out infinite;
-    animation: url-shortener-gradient 20s ease-in-out infinite;
+    -webkit-animation: gradient-background-move 20s ease infinite;
+    -moz-animation: gradient-background-move 20s ease infinite;
+    animation: gradient-background-move 20s ease infinite;
 
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -1018,17 +834,17 @@ nav {
   }
 
   .docks-sh-gradient {
-    background-color: #55efc4;
-    background: linear-gradient(140deg, #000000 0%, #0c3d41 80%);
+    background-color: #0e1110;
+    background: linear-gradient(192deg, #0b0b11 0%,#103538  84%);
 
-    background-size: 400% 400%;
-    -webkit-animation: docks-sh-gradient 15s ease-in-out infinite;
-    -moz-animation: docks-sh-gradient 15s ease-in-out infinite;
-    animation: docks-sh-gradient 15s ease-in-out infinite;
+    background-size: 400%;
+    -webkit-animation: gradient-background-move 15s ease infinite;
+    -moz-animation: gradient-background-move 15s ease infinite;
+    animation: gradient-background-move 15s ease infinite;
 
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
   }
 
   .project-container h2 {
